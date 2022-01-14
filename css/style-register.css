@@ -1,0 +1,129 @@
+@media only screen and (min-width: 600px) { /*Computador*/
+
+
+   #icon-username{
+      position: relative;
+      padding-left: 12px;
+      top: 36px;
+      padding-right: 11px;
+      padding-top: 10px;
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+   }
+   
+   
+   #icon-confirm-pass{
+      position: relative;
+      top: 16px;
+      padding-left: 12px;
+      padding-right: 11px;
+      padding-top: 10px;
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+   }
+   
+  
+   #icon-confirm-pass, svg {
+      top: 36px;
+      right: -45px;
+      background-color: #927dfa;
+      transition: 0.3s ease-in-out;
+   }
+  
+  
+   
+   #icon-username, svg {
+      top: 36px;
+      right: -45px;
+      background-color: #927dfa;
+      transition: 0.3s ease-in-out;
+   }
+   
+   
+   
+  .card-login{
+      margin-top: 15%;
+      margin-bottom: 10%;
+      height: 500px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+   }
+   
+  
+  
+  .terms{
+      margin-left: 15px;
+  }
+  
+   
+
+
+}
+
+
+
+@media only screen and (max-width: 600px) { /*Smartphone*/
+
+
+   #icon-username{
+      position: relative;
+      padding-left: 18px;
+      top: 36px;
+      padding-right: 15px;
+      padding-top: 10px;
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+   }
+   
+   
+   #icon-confirm-pass{
+      position: relative;
+      top: 16px;
+      padding-left: 18px;
+      padding-right: 15px;
+      padding-top: 10px;
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+   }
+   
+  
+   #icon-confirm-pass, svg {
+      top: 36px;
+      background-color: #927dfa;
+      transition: 0.3s ease-in-out;
+   }
+  
+  
+   
+   #icon-username, svg {
+      top: 36px;
+      background-color: #927dfa;
+      transition: 0.3s ease-in-out;
+   }
+   
+   
+   
+  .card-login{
+      margin-top: 15%;
+      margin-bottom: 10%;
+      height: 500px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+
+   }
+   
+  
+  
+  .terms{
+      margin-left: 15px;
+  }
+  
+   
+
+
+
+}
+
+

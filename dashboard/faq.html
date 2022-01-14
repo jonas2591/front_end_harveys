@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style-dashboard.css">
+    <link rel="stylesheet" href="../css/style-historico-de-transacoes.css">
+    <script type="text/javascript" src="../js/jquery.js"></script>
+</head>
+<body>
+
+    <div id="container-menu" style="background-color: #9A88F8;width: 100%;padding: 0; height: 70px;">
+        <div class="logo" style="float: left; margin-top: 15px;margin-left: 15px;">Logo</div>
+        <div id="menu">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+        </div>
+    </div>
+    <div id="menu-lateral" class="menu-lateral">
+        
+        <div class="logo">Logo</div>
+        <ul>
+            <a href="index.html"><li>Dashboard</li></a>
+            <a href="depositar.html"><li>Deposit</li></a>
+            <a href="sacar.html"><li>Withdraw</li></a>
+            <a href="historico-de-transacoes.html"><li>All transactions</li></a>
+            <a href="afiliados.html"><li>Referred</li></a>
+            <a href="bonus-divulgacao.html"><li>Advertiser Bonus</li></a>
+            <a href="faq.html"><li style="background-color: #8971ff;">FAQ</li></a>
+            <a href="contact.html"><li>Contact</li></a>
+            <li>Account Settings [Maintenance]</li>
+            <li id="logout">Logout</li>
+        </ul>
+        <div style="width: 100%; height:97px; color:#ECF0F1;background-color: #9A88F8; padding:0;margin:0; float:right; padding-top: 40px; text-align: center; opacity: 50%;">Copyright © 2021 - HARVEYS (CLAYTON) LTD</div>
+    </div>
+    
+    <div class="lado-branco">
+
+        
+        <div class="box-link-ghs" style="margin-top: 20px;">
+            
+            <div class="box-link" style="width: 1300px; color: #ECF0F1; height:1050px; ">
+                <h1 style="font-size: 30px; margin-top: 10px;">Common questions</h1>
+                <p style="font-weight: 300; margin-top: 10px; font-size: 25px;">- Who we are?</p>
+                <p style="font-weight: 300; margin-top: 10px;">The story of Harveys started at the end of 2018. our founders met in Brazil. With very good business acumen the founders decided to open a cloud cryptocurrency mining company, thus arising the Harveys Mining.</p>
+                <p style="font-weight: 300; margin-top: 10px; font-size: 25px;">- Datacenter Location?</p>
+                <p style="font-weight: 300; margin-top: 10px;">Our Mining Data Centers are located in Brazil.</p>
+                <p style="font-weight: 300; margin-top: 10px;">Address: 21051-290, Estrada Adhemar Bebiano, 1380 - Inhauma, Rio de Janeiro - RJ, 21051-070</p> 
+                <p style="font-weight: 300; margin-top: 10px; font-size: 25px;">- Is the system automatic? </p>
+                <p style="font-weight: 300; margin-top: 10px;">Our system is 100% automated, the site does not use any processing power from your computer.</p> 
+                <p style="font-weight: 300; margin-top: 10px; font-size: 25px;">- When do you start mining?</p>
+                <p style="font-weight: 300; margin-top: 10px;">When payment is completed.</p> 
+                <p style="font-weight: 300; margin-top: 10px; font-size: 25px;">- How to Buy/join?</p>
+                <p style="font-weight: 300; margin-top: 10px;">When you are logged in, go to <a href="#" target="_blank">http://localhost/front-end/dashboard/depositar.html</a></p> 
+                <p style="font-weight: 300; margin-top: 10px;">1 - Choose your favorite cryptocurrency</p>
+                <p style="font-weight: 300; margin-top: 10px;">2 - Choose mining power (GH/s)</p>
+                <p style="font-weight: 300; margin-top: 10px;">3 - Click in Buy GH/s</p>
+                <p style="font-weight: 300; margin-top: 10px; font-size: 25px;">- What forms of payment?</p>
+                <p style="font-weight: 300; margin-top: 10px;">We accept payments in BTC and TRX.</p>
+                <p style="font-weight: 300; margin-top: 10px; font-size: 25px;">- When do I receive my payments?</p>
+                <p style="font-weight: 300; margin-top: 10px;">after 24 hours.</p>
+                <p style="font-weight: 300; margin-top: 10px; font-size: 25px;">- Withdrawal fee?</p>
+                <p style="font-weight: 300; margin-top: 10px;">There is no withdrawal fee.</p>
+                <p style="font-weight: 300; margin-top: 10px; font-size: 25px;">- Why 300 GH/s?</p>
+                <p style="font-weight: 300; margin-top: 10px;">Due to our partnership with <a href="#" target="_blank">GAIA DATACENTER SOLUTION TEAM</a>, we are able to offer a limited number of GH/s for free.</p>
+                <p style="font-weight: 300; margin-top: 10px; font-size: 25px;">For more information, contact us by email or chat. </p>
+            </div>
+
+            <div style="width: 100%; height:97px; color:#535353;background-color: #ECF0F1; padding:0;margin:0; float:right; padding-top: 40px; text-align: center; opacity: 50%;">Copyright © 2021 - HARVEYS (CLAYTON) LTD</div>
+            
+        </div>
+        
+        
+        </div>
+        
+    </div>
+<script src="../js/js-front-dashboard.js"></script>
+<script>
+    $("#logout").click(function() { //desloga usuario
+        localStorage.removeItem('jwt_token')
+        location.reload();
+    });
+</script>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/61d0ac0fc82c976b71c45b59/1fobi07sb';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+</script>
+    <!--End of Tawk.to Script-->
+</body>
+</html>

@@ -1,0 +1,371 @@
+
+@media only screen and (max-width: 600px) { /*Smartphone*/
+      .email{
+         border: solid 5px #927dfa;
+         text-align: center;
+         background-color: #ECF0F1;
+         height: 36.5px;
+         border: auto;
+         border-radius: 20px;
+         color: #927dfa;
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+      }
+
+      .senha{
+         border: solid 5px #927dfa;
+         
+         text-align: center;
+         background-color: #ECF0F1;
+         height: 36.5px;
+         border: auto;
+         border-radius: 20px;
+         color: #927dfa;
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+         
+      }
+
+
+      .title-login{
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+         color: #2E176F;
+         text-align: center;
+      }
+
+
+      .btn-login{
+         padding-top: 3px;
+         align-items: center;
+         text-align: center;
+         height: 50px;
+         border: solid 5px #927dfa;
+         margin: 0;
+         opacity: 50%;
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+         background-color: #927dfa;
+         position: relative;
+      }
+
+      .btn-login, svg{
+         width: 50px;
+      }
+
+      .btn-login:hover{
+         margin: 0;
+         opacity: 100%;
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+         border-radius: 100%;
+      }
+      .esqueci-senha{
+         text-align: center;
+         margin-left: 90px;
+         color: #927dfa;
+      }
+
+      .esqueci-senha:hover{
+         border-bottom: solid 2px #927dfa;
+         
+      }
+
+      .nao-tenho-conta{
+         text-align: center;
+         margin-left: 65px;
+         color: #927dfa;
+      }
+
+
+      #icon-login{
+         position: relative;
+         padding-left: 15px;
+         padding-right: 10px;
+         padding-top: 12.5px;
+         border-top-left-radius: 50px;
+         border-bottom-left-radius: 50px;
+      }
+   
+   
+      #icon-pass{
+         position: relative;
+         padding-left: 15px;
+         padding-right: 10px;
+         padding-top: 13.1px;
+         border-top-left-radius: 50px;
+         border-bottom-left-radius: 50px;
+      }
+   
+   
+   
+   
+      #icon-pass, svg {
+         top: 37px;
+         left: 3px;
+         right: 119px;
+         background-color: #927dfa;
+         transition: 0.3s ease-in-out;
+      }
+   
+
+   
+      #icon-login, svg {
+         width: 20px;
+         top: 37px;
+         left: 3px;
+         right: 20px;
+         background-color: #927dfa;
+         transition: 0.3s ease-in-out;
+      }
+   
+
+      .card-login{
+         margin-top: 15%;
+         height: 500px;
+         margin-bottom: 10%;
+      }
+
+      .container{
+
+         width: 300px;
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+
+      }
+
+
+      .captcha{
+         margin-top: 20px;
+         width: 200px;
+         background-color: rgb(134, 134, 134);
+         height: 50px;
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+         text-align: center;
+         border-radius: 10px;
+         margin-bottom: 15px;
+      }
+
+      .senha{
+         text-align: center;
+      }
+
+
+      .logo-escura{
+         width: 200px;
+         display: block;
+         margin-left: auto;
+         margin-right: auto;
+      }
+}
+
+
+@media only screen and (min-width: 600px) { /*Computador*/
+   .email{
+      border: solid 5px #927dfa;
+      
+      text-align: center;
+      background-color: #ECF0F1;
+      height: 36px;
+      border: auto;
+      border-radius: 20px;
+      color: #927dfa;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+   }
+
+   .senha{
+      border: solid 5px #927dfa;
+      
+      text-align: center;
+      background-color: #ECF0F1;
+      height: 36px;
+      border: auto;
+      border-radius: 20px;
+      color: #927dfa;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      
+   }
+
+
+   .title-login{
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      color: #2E176F;
+      text-align: center;
+   }
+
+
+   .btn-login{
+      padding-top: 3px;
+      align-items: center;
+      text-align: center;
+      height: 50px;
+      border: solid 5px #927dfa;
+      margin: 0;
+      opacity: 50%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: #927dfa;
+      position: relative;
+   }
+
+   .btn-login, svg{
+      width: 50px;
+   }
+
+   .btn-login:hover{
+      margin: 0;
+      opacity: 100%;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 100%;
+   }
+   .esqueci-senha{
+      text-align: center;
+      margin-left: 68px;
+      color: #927dfa;
+   }
+
+   .esqueci-senha:hover{
+      border-bottom: solid 2px #927dfa;
+      
+   }
+
+   .nao-tenho-conta{
+      margin-left: 45px;
+      color: #927dfa;
+   }
+
+
+   #icon-login{
+      position: relative;
+      padding-left: 15px;
+      padding-right: 10px;
+      padding-top: 12.5px;
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+   }
+
+
+   #icon-pass{
+      position: relative;
+      padding-left: 15px;
+      padding-right: 10px;
+      padding-top: 13.1px;
+      border-top-left-radius: 50px;
+      border-bottom-left-radius: 50px;
+   }
+
+
+
+
+   #icon-pass, svg {
+      top: 37px;
+      left: 43px;
+      right: 119px;
+      background-color: #927dfa;
+      transition: 0.3s ease-in-out;
+   }
+
+
+
+
+
+
+   #icon-login, svg {
+      width: 20px;
+      top: 37px;
+      left: 43px;
+      right: 20px;
+      background-color: #927dfa;
+      transition: 0.3s ease-in-out;
+   }
+
+
+
+   .card-login{
+      margin-top: 15%;
+      height: 500px;
+      margin-bottom: 10%;
+   }
+
+   .container{
+
+      width: 300px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+
+   }
+
+
+   .captcha{
+      margin-top: 20px;
+      width: 200px;
+      background-color: rgb(134, 134, 134);
+      height: 50px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      border-radius: 10px;
+      margin-bottom: 15px;
+   }
+
+   .senha{
+      text-align: center;
+   }
+
+
+   .logo-escura{
+      width: 200px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+   }
+
+}
+
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color:    #927dfa;
+    font-weight: 700;
+}
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #927dfa;
+   opacity:  1;
+   font-weight: 700;
+}
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #927dfa;
+   opacity:  1;
+   font-weight: 700;
+}
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color:    #927dfa;
+   font-weight: 700;
+}
+::-ms-input-placeholder { /* Microsoft Edge */
+   color:    #927dfa;
+   font-weight: 700;
+}
+
+::placeholder { /* Most modern browsers support this now. */
+   color:    #927dfa;
+   font-weight: 700;
+}

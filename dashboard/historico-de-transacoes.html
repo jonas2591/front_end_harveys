@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style-dashboard.css">
+    <link rel="stylesheet" href="../css/style-historico-de-transacoes.css">
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+
+    <div id="container-menu" style="background-color: #9A88F8;width: 100%;padding: 0; height: 70px;">
+        <div class="logo" style="float: left; margin-top: 15px;margin-left: 15px;">Logo</div>
+        <div id="menu">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+        </div>
+    </div>
+    <div id="menu-lateral" class="menu-lateral">
+        
+        <div class="logo">Logo</div>
+        <ul>
+            <a href="index.html"><li>Dashboard</li></a>
+            <a href="depositar.html"><li>Deposit</li></a>
+            <a href="sacar.html"><li>Withdraw</li></a>
+            <a href="historico-de-transacoes.html"><li style="background-color: #8971ff;">All transactions</li></a>
+            <a href="afiliados.html"><li>Referred</li></a>
+            <a href="bonus-divulgacao.html"><li>Advertiser Bonus</li></a>
+            <a href="faq.html"><li>FAQ</li></a>
+            <a href="contact.html"><li>Contact</li></a>
+            <li>Account Settings [Maintenance]</li>
+            <li id="logout">Logout</li>
+        </ul>
+        
+    </div>
+    
+    <div class="lado-branco">
+
+        <p style="width: 100%; text-align: center; margin-top: 50px;font-size: 25px; font-weight: 700;">Transaction History</p>
+        <div class="box-link-ghs">
+            
+            <div class="box-link" style="margin-top: 50px; width: 100%; height: 700px; overflow: scroll; border-radius: 0px;">
+                <table class="table">
+                    <thead>
+                        <th>ID</th>
+                        <th>Transaction Type</th>
+                        <th>Wallet Address</th>
+                        <th>Crypto Name</th>
+                        <th>Value Transaction</th>
+                        <th>TxID</th>
+                        <th>GH/s</th>
+                        <th>Status</th>
+                        <th>Created_at</th>
+                    </thead>
+                    <tbody id="historic-transactions">
+                        <!--
+                            <tr>
+                            <td data-label="ID">#1</td>
+                            <td data-label="Transaction Type">withdraw</td>
+                            <td data-label="Wallet Address" style="overflow: scroll;">14p7zFqBcXFEjrEV4xpXBsUSDu7mj5oaUQ</td>
+                            <td data-label="Crypto Name">BTC</td>
+                            <td data-label="Value Transaction">0.002</td>
+                            <td data-label="TxID" style="overflow: scroll;">wait</td>
+                            <td data-label="GH/s">null</td>
+                            <td data-label="Status" style="color: #f1c40f;">pending</td>
+                            <td data-label="Created_at" >2022-01-06T05:28:48.683Z</td>
+                        </tr>
+                        <tr>
+                            <td data-label="ID">#1</td>
+                            <td data-label="Transaction Type">withdraw</td>
+                            <td data-label="Wallet Address" style="overflow: scroll;">14p7zFqBcXFEjrEV4xpXBsUSDu7mj5oaUQ</td>
+                            <td data-label="Crypto Name">BTC</td>
+                            <td data-label="Value Transaction">0.002</td>
+                            <td data-label="TxID" style="overflow: scroll;">wait</td>
+                            <td data-label="GH/s">null</td>
+                            <td data-label="Status" style="color: #f1c40f;">pending</td>
+                            <td data-label="Created_at" >2022-01-06T05:28:48.683Z</td>
+                        </tr>
+                        -->
+                    </tbody>
+                </table>
+            </div>
+            <div style="width: 100%; height:97px; color:#535353;background-color: #ECF0F1; padding:0;margin:0; float:right; padding-top: 40px; text-align: center; opacity: 50%;">Copyright © 2021 - HARVEYS (CLAYTON) LTD</div>
+        </div>
+        
+        
+        </div>
+        
+    </div>
+<script src="../js/js-front-dashboard.js"></script>
+<script src="../js/dashboard/historic_transactions.js"></script>
+<script>
+    $("#logout").click(function() { //desloga usuario
+        localStorage.removeItem('jwt_token')
+        location.reload();
+    });
+</script>
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/61d0ac0fc82c976b71c45b59/1fobi07sb';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+</script>
+</body>
+</html>

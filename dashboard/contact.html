@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style-dashboard.css">
+    <link rel="stylesheet" href="../css/style-historico-de-transacoes.css">
+    <script type="text/javascript" src="../js/jquery.js"></script>
+</head>
+<body>
+
+    <div id="container-menu" style="background-color: #9A88F8;width: 100%;padding: 0; height: 70px;">
+        <div class="logo" style="float: left; margin-top: 15px;margin-left: 15px;">Logo</div>
+        <div id="menu">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+        </div>
+    </div>
+    <div id="menu-lateral" class="menu-lateral">
+        
+        <div class="logo">Logo</div>
+        <ul>
+            <a href="index.html"><li>Dashboard</li></a>
+            <a href="depositar.html"><li>Deposit</li></a>
+            <a href="sacar.html"><li>Withdraw</li></a>
+            <a href="historico-de-transacoes.html"><li>All transactions</li></a>
+            <a href="afiliados.html"><li>Referred</li></a>
+            <a href="bonus-divulgacao.html"><li>Advertiser Bonus</li></a>
+            <a href="faq.html"><li>FAQ</li></a>
+            <a href="contact.html"><li style="background-color: #8971ff;">Contact</li></a>
+            <li>Account Settings [Maintenance]</li>
+            <li id="logout">Logout</li>
+        </ul>
+        <div style="width: 100%; height:97px; color:#ECF0F1;background-color: #9A88F8; padding:0;margin:0; float:right; padding-top: 40px; text-align: center; opacity: 50%;">Copyright © 2021 - HARVEYS (CLAYTON) LTD</div>
+    </div>
+    
+    <div class="lado-branco">
+
+        
+        <div class="box-link-ghs" style="margin-top: 20px;">
+            
+            <div class="box-link" style="width: 1300px; color: #ECF0F1; height:380px; ">
+                <h1 style="font-size: 30px; margin-top: 50px;">Contact for support</h1>
+                <p style="font-weight: 300; margin-top: 10px; font-size: 20px;">Email: support@harveys-cloud-mining.online</p>
+                <p style="font-weight: 300; margin-top: 10px; font-size: 20px;">Discord: Harveys#5947</p>
+                <p style="font-weight: 300; margin-top: 10px; font-size: 20px;">Facebook: coming soon</p>
+                <p style="font-weight: 300; margin-top: 10px; font-size: 20px;">Instagram: coming soon</p>
+                <p style="font-weight: 300; margin-top: 10px; font-size: 20px;">You can contact us via the chat on the right.</p>
+                
+            </div>
+
+            <div style="width: 100%; height:97px; color:#535353;background-color: #ECF0F1; padding:0;margin:0; float:right; padding-top: 40px; text-align: center; opacity: 50%;">Copyright © 2021 - HARVEYS (CLAYTON) LTD</div>
+            
+        </div>
+        
+        
+        </div>
+        
+    </div>
+<script src="../js/js-front-dashboard.js"></script>
+<script>
+    $("#logout").click(function() { //desloga usuario
+        localStorage.removeItem('jwt_token')
+        window.location = 'index.html'
+    });
+</script>
+<!--Start of Tawk.to Script-->
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/61d0ac0fc82c976b71c45b59/1fobi07sb';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+</script>
+    <!--End of Tawk.to Script-->
+</body>
+</html>

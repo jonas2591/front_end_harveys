@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style-dashboard.css">
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+
+    <div id="container-menu" style="background-color: #9A88F8;width: 100%;padding: 0; height: 70px;">
+        <div class="logo" style="float: left; margin-top: 15px;margin-left: 15px;">Logo</div>
+        <div id="menu">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+        </div>
+    </div>
+    <div id="menu-lateral" class="menu-lateral">
+        
+        <div class="logo">Logo</div>
+        <ul>
+            <a href="index.html"><li>Dashboard</li></a>
+            <a href="depositar.html"><li>Deposit</li></a>
+            <a href="sacar.html"><li style="background-color: #8971ff;">Withdraw</li></a>
+            <a href="historico-de-transacoes.html"><li>All transactions</li></a>
+            <a href="afiliados.html"><li>Referred</li></a>
+            <a href="bonus-divulgacao.html"><li>Advertiser Bonus</li></a>
+            <a href="faq.html"><li>FAQ</li></a>
+            <a href="contact.html"><li>Contact</li></a>
+            <li>Account Settings [Maintenance]</li>
+            <li id="logout">Logout</li>
+        </ul>
+        
+    </div>
+    
+    <div class="lado-branco">
+
+        <p style="width: 100%; text-align: center; margin-top: 50px;font-size: 25px; font-weight: 700;">Withdraw cryptocurrencies</p>
+        <div class="box-link-ghs">
+            
+            <div class="box-link" style="margin-top: 50px;">
+                <h1 style="font-size:20px; font-weight: 300; text-align: center; color: #ECF0F1; padding-top:10px;">Withdraw BTC</h1>
+                <div class="price-btc-img">img-btc</div>
+                <h1 class="h1-crypto">Minimum: 0.000230000 BTC</h1>
+                <input id="wallet-address-btc" autocomplete="off" type="text" style="border-radius: 50px;width: 50%; text-align: center; height: 45px;" placeholder="btc wallet address">
+                <input id="value-withdraw-btc" autocomplete="off" type="text" style="border-radius: 50px;width: 50%; text-align: center; height: 45px; margin-top: 10px;" placeholder="0.000000000">
+            
+                <h1 class="ghs-infor" id="btc-balance">Balance: 0.007098 BTC</h1>
+                <button class="button-withdraw" id="withdraw-btc">Withdraw BTC</button>
+            </div>
+            <div class="box-link" style="margin-top: 50px;">
+                <h1 style="font-size:20px; font-weight: 300; text-align: center; color: #ECF0F1; padding-top:10px;">Withdraw TRX</h1>
+                <div class="price-trx-img">img-btc</div>
+                <h1 class="h1-crypto">Minimum: 50.000000000 TRX</h1>
+                <input id="wallet-address-trx" autocomplete="off" type="text" style="border-radius: 50px;width: 50%; text-align: center; height: 45px;" placeholder="trx wallet address">
+                <input id="value-withdraw-trx" autocomplete="off" type="text" style="border-radius: 50px;width: 50%; text-align: center; height: 45px; margin-top: 10px;" placeholder="0.000000000">
+            
+                <h1 class="ghs-infor" id="trx-balance">Balance: 0.007098 TRX</h1>
+                <button class="button-withdraw" id="withdraw-trx">Withdraw TRX</button>
+            </div>
+            <div style="width: 100%; height:97px; color:#535353;background-color: #ECF0F1; padding:0;margin:0; float:right; padding-top: 40px; text-align: center; opacity: 50%;">Copyright © 2021 - HARVEYS (CLAYTON) LTD</div>
+        </div>
+        
+        
+        </div>
+        
+    </div>
+<script src="../js/js-front-dashboard.js"></script>
+<script src="../js/dashboard/withdraw.js"></script>
+<script>
+    $("#logout").click(function() { //desloga usuario
+        localStorage.removeItem('jwt_token')
+        location.reload();
+    });
+</script>
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/61d0ac0fc82c976b71c45b59/1fobi07sb';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+</script>
+</body>
+</html>

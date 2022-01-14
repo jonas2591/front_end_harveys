@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style-dashboard.css">
+    <link rel="stylesheet" href="../css/style-historico-de-transacoes.css">
+    <script type="text/javascript" src="../js/jquery.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+
+    <div id="container-menu" style="background-color: #9A88F8;width: 100%;padding: 0; height: 70px;">
+        <div class="logo" style="float: left; margin-top: 15px;margin-left: 15px;">Logo</div>
+        <div id="menu">
+            <div id="bar1" class="bar"></div>
+            <div id="bar2" class="bar"></div>
+            <div id="bar3" class="bar"></div>
+        </div>
+    </div>
+    <div id="menu-lateral" class="menu-lateral">
+        
+        <div class="logo">Logo</div>
+        <ul>
+            <a href="index.html"><li>Dashboard</li></a>
+            <a href="depositar.html"><li>Deposit</li></a>
+            <a href="sacar.html"><li>Withdraw</li></a>
+            <a href="historico-de-transacoes.html"><li>All transactions</li></a>
+            <a href="afiliados.html"><li style="background-color: #8971ff;">Referred</li></a>
+            <a href="bonus-divulgacao.html"><li>Advertiser Bonus</li></a>
+            <a href="faq.html"><li>FAQ</li></a>
+            <a href="contact.html"><li>Contact</li></a>
+            <li>Account Settings [Maintenance]</li>
+            <li id="logout">Logout</li>
+        </ul>
+        
+    </div>
+    
+    <div class="lado-branco">
+
+        
+        <div class="box-link-ghs">
+
+            <div class="box-link" style="margin-top: 20px; width: 100%; height: 300px; overflow: scroll; border-radius: 0px;">
+
+                <h2 style="font-size:20px; font-weight: 700; text-align: center; color: #ECF0F1; padding-top:10px;">Link de afiliado</h2>
+                <input type="text" style="border-radius: 50px;width: 50%; text-align: center; height: 45px;" value="https://www.haveys-mining.com/a/83944545" id="link-referal" disabled placeholder="https://www.haveys-mining.com/a/83944545" >
+                <button class="button-withdraw" >Copiar Link</button>
+                <p style="font-size:15px; font-weight: 300; text-align: center; color: #ECF0F1; padding-top:10px;" id="refer-length">Referral: 0</p>
+                <p style="font-size:15px; font-weight: 300; text-align: center; color: #ECF0F1; padding-top:10px;" id="win-btc-refer">Afiliados Ganhos BTC: 0.00004</p>
+                <p style="font-size:15px; font-weight: 300; text-align: center; color: #ECF0F1; padding-top:10px;" id="win-trx-refer">Afiliados Ganhos TRX: 0.00004</p>
+                <p style="font-size:15px; font-weight: 300; text-align: center; color: #ECF0F1; padding-top:10px;">- You earn 10% commission from every referral deposit</p>
+                <p style="font-size:15px; font-weight: 300; text-align: center; color: #ECF0F1; padding-top:10px;">- For every 100 referrals you can request a bonus of 30 dollars </p> 
+            </div>
+            
+            <div class="box-link" style="margin-top: 20px; width: 100%; height: 300px; overflow: scroll; border-radius: 0px;">
+                <p style="width: 100%; text-align: center; font-size: 25px; font-weight: 700; color: #ECF0F1;">Afiliados</p>
+                <table class="table">
+                    <thead>
+                        <th>Username</th>
+                        <th>Created_at</th>
+                    </thead>
+                    <tbody id="referal-users">
+                        <!--
+                                                    <tr>
+                            <td data-label="Usuario">marcos2591</td>
+                            <td data-label="Tempo registrado">30/12/21 22:45</td>
+                        </tr>
+                        <tr style="padding-top: 50px;">
+                            <td data-label="Usuario">juliana2</td>
+                            <td data-label="Tempo registrado">30/12/21 22:45</td>
+                        </tr>
+                        <tr style="padding-top: 50px;">
+                            <td data-label="Usuario">juliana2</td>
+                            <td data-label="Tempo registrado">30/12/21 22:45</td>
+                        </tr>
+                        <tr style="padding-top: 50px;">
+                            <td data-label="Usuario">juliana2</td>
+                            <td data-label="Tempo registrado">30/12/21 22:45</td>
+                        </tr>
+                        <tr style="padding-top: 50px;">
+                            <td data-label="Usuario">juliana2</td>
+                            <td data-label="Tempo registrado">30/12/21 22:45</td>
+                        </tr>
+                        <tr style="padding-top: 50px;">
+                            <td data-label="Usuario">juliana2</td>
+                            <td data-label="Tempo registrado">30/12/21 22:45</td>
+                        </tr>
+                        -->
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="box-link" style="margin-top: 20px; width: 100%; height: 300px; overflow: scroll; border-radius: 0px;">
+                <p style="width: 100%; text-align: center; font-size: 25px; font-weight: 700; color: #ECF0F1;">Comissão de afiliados</p>
+                <table class="table">
+                    <thead>
+                        <th>Username</th>
+                        <th>Commission</th>
+                        <th>Cryptocurrency Type</th>
+                        <th>Date/Time</th>
+                    </thead>
+                    <tbody id="referal-transactions">
+                        <!--
+ <tr>
+                            <td data-label="Usuario">marcos2591</td>
+                            <td data-label="Comissao">0.00004</td>
+                            <td data-label="Tipo de criptomoeda">BTC</td>
+                            <td data-label="Data/hora">12/02/2021</td>
+                        </tr>
+                        <tr style="padding-top: 50px;">
+                            <td data-label="Usuario">marcos2591</td>
+                            <td data-label="Comissao">44.00504</td>
+                            <td data-label="Tipo de criptomoeda">TRX</td>
+                            <td data-label="Data/hora">14/02/2021</td>
+
+                        </tr>
+                        <tr style="padding-top: 50px;">
+                            <td data-label="Usuario">marcos2591</td>
+                            <td data-label="Comissao">44.00504</td>
+                            <td data-label="Tipo de criptomoeda">TRX</td>
+                            <td data-label="Data/hora">14/02/2021</td>
+
+                        </tr>
+                        <tr style="padding-top: 50px;">
+                            <td data-label="Usuario">marcos2591</td>
+                            <td data-label="Comissao">44.00504</td>
+                            <td data-label="Tipo de criptomoeda">TRX</td>
+                            <td data-label="Data/hora">14/02/2021</td>
+
+                        </tr>
+                        <tr style="padding-top: 50px;">
+                            <td data-label="Usuario">marcos2591</td>
+                            <td data-label="Comissao">44.00504</td>
+                            <td data-label="Tipo de criptomoeda">TRX</td>
+                            <td data-label="Data/hora">14/02/2021</td>
+
+                        </tr>
+                        <tr style="padding-top: 50px;">
+                            <td data-label="Usuario">marcos2591</td>
+                            <td data-label="Comissao">44.00504</td>
+                            <td data-label="Tipo de criptomoeda">TRX</td>
+                            <td data-label="Data/hora">14/02/2021</td>
+
+                        </tr>
+                        <tr style="padding-top: 50px;">
+                            <td data-label="Usuario">marcos2591</td>
+                            <td data-label="Comissao">44.00504</td>
+                            <td data-label="Tipo de criptomoeda">TRX</td>
+                            <td data-label="Data/hora">14/02/2021</td>
+
+                        </tr>
+
+                        <tr style="padding-top: 50px;">
+                            <td data-label="Usuario">marcos2591</td>
+                            <td data-label="Comissao">44.00504</td>
+                            <td data-label="Tipo de criptomoeda">TRX</td>
+                            <td data-label="Data/hora">14/02/2021</td>
+
+                        </tr>
+
+                        -->
+                       
+                    </tbody>
+                </table>
+            </div>
+            <div style="width: 100%; height:97px; color:#535353;background-color: #ECF0F1; padding:0;margin:0; float:right; padding-top: 40px; text-align: center; opacity: 50%;">Copyright © 2021 - HARVEYS (CLAYTON) LTD</div>
+        </div>
+        
+        
+        </div>
+        
+    </div>
+<script src="../js/js-front-dashboard.js"></script>
+<script src="../js/dashboard/afiliados.js"></script>
+<script>
+    $("#logout").click(function() { //desloga usuario
+        localStorage.removeItem('jwt_token')
+        location.reload();
+    });
+</script>
+<script type="text/javascript">
+    var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+    (function(){
+    var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+    s1.async=true;
+    s1.src='https://embed.tawk.to/61d0ac0fc82c976b71c45b59/1fobi07sb';
+    s1.charset='UTF-8';
+    s1.setAttribute('crossorigin','*');
+    s0.parentNode.insertBefore(s1,s0);
+    })();
+</script>
+</body>
+</html>

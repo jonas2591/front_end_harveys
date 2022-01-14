@@ -1,0 +1,362 @@
+*{
+    margin:0;
+    padding: 0;
+    font-size: 100%; 
+    border: none;
+    outline: none; 
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+    color: #FFF;
+    
+}
+
+a{
+    color: #fff;
+    border-bottom: solid 1px #907cff;
+}
+
+a:hover{
+    color: #c3b7ff;
+}
+
+
+@media only screen and (min-width: 600px) { /*Computador*/
+    
+    body{
+        background-color: #ECF0F1;
+        overflow: none;
+    }
+    
+    div{
+        display: inline-block;
+        margin: 0;
+        height: 100vh;
+    }
+    
+    .menu-lateral{
+        width: 20%;
+        height: 100vh;
+        position: fixed;
+        background-color: #9A88F8;
+    }
+    .lado-branco{
+        width: 80%;
+        height: 100%;
+        background-color: #FFF;
+        float: right;
+        
+    }
+    .box-link-ghs{
+        height: 300px;
+        background: #FFF;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .box-link{
+        width: 500px;
+        height: 500px;
+        background-image: linear-gradient(#ae9eff, #9A88F8);
+        margin: 10px;
+        border-radius: 30px;
+        text-align: center;
+    }
+    ul{
+        text-align: center;
+        color: #FFF;
+        padding-top:1px;
+        padding-bottom:1px;
+    }
+    li{
+        padding:20px;
+        margin-top: 10px;
+        box-shadow: 0px 1px 1px #927cff;
+        margin-bottom: 10px;
+        list-style: none;
+        cursor: pointer;
+    }
+    li:hover{
+        background-color: #8971ff;
+    
+    }
+    
+    
+    .box-link-affilial{
+        margin-top: 10px;
+        width: 90%;
+        height: 400px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: linear-gradient(#ae9eff, #9A88F8);
+        border-radius: 30px;
+        text-align: center;
+    }
+    
+    .price-btc-img{
+        height: 156px;
+        width: 200px;
+        font-size: 0;
+        background: url(../images/cryptos-images/BTC.png) center center/156px no-repeat;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+    }
+    .price-trx-img{
+        height: 156px;
+        width: 200px;
+        font-size: 0;
+        background: url(../images/cryptos-images/TRON.png) center center/156px no-repeat;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+    }
+    .h1-crypto{
+        color: #FFF;
+        font-weight:200;
+        font-size: 25px;
+    }
+    
+    .ghs-infor{
+        color: #FFF;
+        font-weight:200;
+        font-size: 20px;
+    }
+    .button-withdraw{
+        width: 200px;
+        padding-top:10px;
+        padding-left:20px;
+        padding-right:20px;
+        padding-bottom:10px;
+        background-color: #FFF;
+        border-radius: 50px;
+        margin-top: 20px;
+        cursor: pointer;
+        color: #9A88F8;
+        transition: 0.4s ease-in-out;
+    }
+    .button-withdraw:hover{
+        background-color: #927cff;
+        color: #FFF;
+        transition: 0.4s ease-in-out;
+    }
+    .logo{
+        width: 156px;
+        height: 40px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background: url(../images/Logo_text-branca.png) center center/156px;
+        font-size: 0;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .logo:hover{
+        background: url(../images/Logo_text-branca-hover.png) center center/156px;
+    
+    }
+}
+
+
+
+
+@media only screen and (max-width: 600px) { /*Smartphone*/
+
+
+    #menu{
+       
+        background-color: #9A88F8;
+        margin-top: 30px;
+        margin-right: 10px;
+        width: 35px;
+        height: 35px;
+        cursor: pointer;
+        float: right;
+        position: relative;
+        transition: 0.3s ease-in-out;
+    }
+    .bar{
+        height: 5px;
+        width: 100%;
+        background-color: #FFF;
+        display: block;
+        border-radius: 5px;
+        transition: 0.3s ease-in-out;
+    }
+    #bar1{
+        transform: translateY(-4px);
+    }
+    
+    #bar3{
+        transform: translateY(4px);
+    }
+    
+    #bar1-close{
+        position: absolute;
+        transform: skewY(20deg);
+        transform: rotate(45deg);
+        top: 0px;
+    }
+    
+    #bar3-close{
+        position: absolute;
+        transform: skewY(20deg);
+        transform: rotate(-45deg);
+        top: 0px;
+    }
+    
+    #bar2-close{
+        transform: scaleY(1.5);
+        display: none;
+    }
+    body{
+        background-color: #ECF0F1;
+        overflow: none;
+    }
+    
+    div{
+        display: inline-block;
+        margin: 0;
+        height: 100vh;
+    }
+    
+    .menu-lateral{
+        width: 100%;
+        height: 100%;
+        background-color: #9A88F8;
+       
+        
+    }
+    .lado-branco{
+        width: 100%;
+        height: 100%;
+        background-color: #FFF;
+        float: right;
+        
+    }
+    .box-link-ghs{
+        height: 300px;
+        background: #FFF;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .box-link{
+        width: 500px;
+        height: 500px;
+        background-color: #9A88F8;
+        margin: 10px;
+        border-radius: 30px;
+        text-align: center;
+    }
+    ul{
+        text-align: center;
+        color: #FFF;
+        padding-top:1px;
+        padding-bottom:1px;
+    }
+    li{
+        padding:20px;
+        margin-top: 10px;
+        box-shadow: 0px 1px 1px #927cff;
+        margin-bottom: 10px;
+        list-style: none;
+        cursor: pointer;
+    }
+    li:hover{
+        background-color: #8971ff;
+    
+    }
+    
+    
+    .box-link-affilial{
+        margin-top: 10px;
+        width: 90%;
+        height: 400px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: linear-gradient(#ae9eff, #9A88F8);
+        border-radius: 30px;
+        text-align: center;
+    }
+    
+    .price-btc-img{
+        height: 156px;
+        width: 200px;
+        font-size: 0;
+        background: url(../images/cryptos-images/BTC.png) center center/156px no-repeat;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+    }
+    .price-trx-img{
+        height: 156px;
+        width: 200px;
+        font-size: 0;
+        background: url(../images/cryptos-images/TRON.png) center center/156px no-repeat;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 25px;
+    }
+    .h1-crypto{
+        color: #FFF;
+        font-weight:200;
+        font-size: 25px;
+    }
+    
+    .ghs-infor{
+        color: #FFF;
+        font-weight:200;
+        font-size: 20px;
+    }
+    .button-withdraw{
+        width: 200px;
+        padding-top:10px;
+        padding-left:20px;
+        padding-right:20px;
+        padding-bottom:10px;
+        background-color: #FFF;
+        border-radius: 50px;
+        margin-top: 20px;
+        cursor: pointer;
+        color: #9A88F8;
+        transition: 0.4s ease-in-out;
+    }
+    .button-withdraw:hover{
+        background-color: #927cff;
+        color: #FFF;
+        transition: 0.4s ease-in-out;
+    }
+    .logo{
+        width: 156px;
+        height: 40px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background: url(../images/Logo_text-branca.png) center center/156px;
+        font-size: 0;
+        transition: 0.3s ease-in-out;
+    }
+    
+    .logo:hover{
+        background: url(../images/Logo_text-branca-hover.png) center center/156px;
+    
+    }
+
+}
+
+
